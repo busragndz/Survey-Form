@@ -1,0 +1,108 @@
+body::before {
+ content: "";
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ z-index: -1;
+ background: gray;
+ background-image: linear-gradient(115deg, 
+ rgba(206,208,212,0.8), 
+ rgba(166,190,228,0.7) 
+ ), url(https://raw.githubusercontent.com/lasjorg/fcc-form-example-image/master/67103817-7c51e200-f18b-11e9-975f-f74561336a9a-lj.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  color: rgba(33, 33, 89, 1);
+  font-size: 30px;
+  align-items: center;
+}
+
+#survey-form {
+  background-color: rgba(33, 33, 55, 0.8);
+  margin: 0px 10%;
+  padding: 5rem 8rem;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 1076px) {
+  #survey-form {
+    padding: 2.5rem 2rem;
+  }
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  font-family: Ariel, Helvetica, sans-serif;
+}
+
+.form-prompt {
+  font-size: 25px;
+  color: #eee;
+  font-family: Ariel, Helvetica, sans-serif;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+input, #current-role {
+  padding: 10px;
+  margin: 5px 0px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #222;
+}
+
+input, #feature-of-freeCodeCamp {
+  padding: 10px;
+  margin: 5px 0px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #222;
+}
+
+.radio-freeCodeCamp-recommend, 
+.improved {
+  display: inline-block;
+  margin-right: 0.65rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+#comments {
+  font-size: 20px;
+  color: #222;
+  padding: 10px;
+  font-family: Ariel, Helvetica, sans-serif;
+}
+
+.submit-button {
+  background-color: #55dd55f0;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.submit-button:hover {
+	background-color: #55ff55f0;
+
+}
